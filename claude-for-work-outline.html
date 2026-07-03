@@ -128,7 +128,7 @@
   .dhead .dn{font-family:'Playfair Display',serif;font-size:23px;color:var(--gold);font-weight:700;min-width:32px;line-height:1;}
   .dhead .dtitle{font-size:13.5px;font-weight:700;color:var(--charcoal);flex:1;}
   .dhead .dtime{font-size:9.5px;color:var(--gold);background:var(--gold-pale);padding:3px 10px;border-radius:12px;white-space:nowrap;font-weight:600;}
-  .dcols{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:7px;}
+  .dcols{display:grid;grid-template-columns:2fr 1fr;gap:14px;margin-bottom:7px;}
   .dcol h6{font-size:9px;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:5px;}
   .dcol ul{list-style:none;}
   .dcol li{font-size:10.2px;color:var(--ink);line-height:1.36;padding:1px 0 1px 13px;position:relative;}
@@ -155,7 +155,7 @@
   @media print{
     html,body{background:#fff;}
     .page{margin:0;box-shadow:none;width:auto;min-height:auto;}
-    .page1{page-break-after:always;}
+    .page{page-break-after:always;} .page:last-child{page-break-after:auto;}
     @page{size:A4;margin:0;}
   }
 </style>
@@ -166,16 +166,16 @@
   <div class="hero">
     <div class="brand-row">
       <div class="kicker">Professional AI Workshop</div>
-      <div class="lumis"><b>LUMIS ADVISORY</b><br>AI · Finance · Productivity</div>
+      <div class="lumis"><b>LUMIS ADVISORY</b></div>
     </div>
     <h1 class="title">Claude <span class="for">for</span> Work</h1>
     <div class="subtitle">ปลดล็อกเวลา <b>2–3 ชั่วโมง/วัน</b> ด้วย Claude — จาก Zero สู่ Workflow ที่ทำงานแทนคุณได้จริง</div>
     <div class="stat-strip">
       <div class="stat"><div class="n">11</div><div class="l">Hands-on Blocks</div></div>
-      <div class="stat"><div class="n">8 ชม.</div><div class="l">Intensive 1-Day</div></div>
+      <div class="stat"><div class="n">6 ชม.</div><div class="l">Intensive 1-Day</div></div>
       <div class="stat"><div class="n">2</div><div class="l">Parts · Chat → Cowork</div></div>
       <div class="stat"><div class="n">1</div><div class="l">Workflow พร้อมใช้จริง</div></div>
-      <div class="stat"><div class="n">2–5</div><div class="l">Private Group</div></div>
+      
     </div>
   </div>
 
@@ -230,26 +230,26 @@
   <div class="p2">
     <div class="p2-head">
       <div class="l">Course <span>Outline</span> — 11 Blocks</div>
-      <div class="r">Hands-on · ลงมือทำกับงานจริง<br>Intensive 1-Day · 8 ชั่วโมง</div>
+      <div class="r">Hands-on · ลงมือทำกับงานจริง<br>Intensive 1-Day · 6 ชั่วโมง</div>
     </div>
 
     <div class="part-band"><span class="tag">Part 1</span><span class="nm">Foundation — เริ่มจาก 0 สู่ใช้งานได้จริง</span><span class="mn">Block 01–07</span></div>
     <div class="blocks">
-      <div class="blk"><div class="bn">01</div><div class="bc"><div class="bt"><span>Claude คืออะไร?</span><span class="tm">30 น.</span></div><div class="bd">AI Colleague ไม่ใช่แค่ chatbot</div></div></div>
-      <div class="blk"><div class="bn">02</div><div class="bc"><div class="bt"><span>First Time Setup</span><span class="tm">40 น.</span></div><div class="bd">ติดตั้ง Desktop · Capabilities · Global Instructions · Skills</div></div></div>
-      <div class="blk"><div class="bn">03</div><div class="bc"><div class="bt"><span>Prompt 101 — CTFC</span><span class="tm">45 น.</span></div><div class="bd">เรียนรู้ framework ที่ดีในการ prompt ให้ได้ผลลัพท์ที่ดี</div></div></div>
-      <div class="blk"><div class="bn">04</div><div class="bc"><div class="bt"><span>Use Case Workshop</span><span class="tm">45 น.</span></div><div class="bd">4 ประเภทงาน: Writing · Analysis · Planning · Document Production</div></div></div>
-      <div class="blk"><div class="bn">05</div><div class="bc"><div class="bt"><span>Claude in Excel & PPT</span><span class="tm">35 น.</span></div><div class="bd">สั่งงานจาก Add-in ที่ฝังใน Excel/Powerpoint ให้ได้ผลลัพท์ที่ต้องการ</div></div></div>
-      <div class="blk"><div class="bn">06</div><div class="bc"><div class="bt"><span>Iterate & Trust</span><span class="tm">45 น.</span></div><div class="bd">3 Moves ปรับผลลัพท์ให้ตรงใจ</div></div></div>
-      <div class="blk"><div class="bn">07</div><div class="bc"><div class="bt"><span>Recap + Q&A</span><span class="tm">15 น.</span></div><div class="bd">ทบทวนสิ่งที่ได้จาก part 1 และปูทางสู่ Cowork</div></div></div>
+      <div class="blk"><div class="bn">01</div><div class="bc"><div class="bt"><span>Claude คืออะไร?</span></div><div class="bd">AI Colleague ไม่ใช่แค่ chatbot</div></div></div>
+      <div class="blk"><div class="bn">02</div><div class="bc"><div class="bt"><span>First Time Setup</span></div><div class="bd">ติดตั้ง Desktop · Capabilities · Global Instructions · Skills</div></div></div>
+      <div class="blk"><div class="bn">03</div><div class="bc"><div class="bt"><span>Prompt 101 — CTFC</span></div><div class="bd">เรียนรู้ framework ที่ดีในการ prompt ให้ได้ผลลัพท์ที่ดี</div></div></div>
+      <div class="blk"><div class="bn">04</div><div class="bc"><div class="bt"><span>Use Case Workshop</span></div><div class="bd">4 ประเภทงาน: Writing · Analysis · Planning · Document Production</div></div></div>
+      <div class="blk"><div class="bn">05</div><div class="bc"><div class="bt"><span>Claude in Excel & PPT</span></div><div class="bd">สั่งงานจาก Add-in ที่ฝังใน Excel/Powerpoint ให้ได้ผลลัพท์ที่ต้องการ</div></div></div>
+      <div class="blk"><div class="bn">06</div><div class="bc"><div class="bt"><span>Iterate & Trust</span></div><div class="bd">3 Moves ปรับผลลัพท์ให้ตรงใจ</div></div></div>
+      <div class="blk"><div class="bn">07</div><div class="bc"><div class="bt"><span>Recap + Q&A</span></div><div class="bd">ทบทวนสิ่งที่ได้จาก part 1 และปูทางสู่ Cowork</div></div></div>
     </div>
 
     <div class="part-band"><span class="tag">Part 2</span><span class="nm">Cowork — สร้างระบบที่ทำงานแทนคุณ</span><span class="mn">Block 08–11</span></div>
     <div class="blocks">
-      <div class="blk"><div class="bn">08</div><div class="bc"><div class="bt"><span>Cowork Deep Dive</span><span class="tm">65 น.</span></div><div class="bd">Chat vs Cowork เลือกให้ถูก · 9 สิ่งที่ Cowork ทำได้</div></div></div>
-      <div class="blk"><div class="bn">09</div><div class="bc"><div class="bt"><span>RAPID Framework</span><span class="tm">30 น.</span></div><div class="bd">เลือกว่างานไหนเหมาะที่จะทำ Automation</div></div></div>
-      <div class="blk"><div class="bn">10</div><div class="bc"><div class="bt"><span>Build Your First Workflow</span><span class="tm">90 น.</span></div><div class="bd">สร้าง project ให้เป็น sub-agent ช่วยงานจริง</div></div></div>
-      <div class="blk"><div class="bn">11</div><div class="bc"><div class="bt"><span>Showcase + Daily Habit</span><span class="tm">25 น.</span></div><div class="bd">Demo workflow ตัวเอง · 10-Minute Daily Habit · ROI Tracker · 30-Day Challenge</div></div></div>
+      <div class="blk"><div class="bn">08</div><div class="bc"><div class="bt"><span>Cowork Deep Dive</span></div><div class="bd">Chat vs Cowork เลือกให้ถูก · 9 สิ่งที่ Cowork ทำได้</div></div></div>
+      <div class="blk"><div class="bn">09</div><div class="bc"><div class="bt"><span>RAPID Framework</span></div><div class="bd">เลือกว่างานไหนเหมาะที่จะทำ Automation</div></div></div>
+      <div class="blk"><div class="bn">10</div><div class="bc"><div class="bt"><span>Build Your First Workflow</span></div><div class="bd">สร้าง project ให้เป็น sub-agent ช่วยงานจริง</div></div></div>
+      <div class="blk"><div class="bn">11</div><div class="bc"><div class="bt"><span>Showcase + Daily Habit</span></div><div class="bd">Demo workflow ตัวเอง · 10-Minute Daily Habit · ROI Tracker · 30-Day Challenge</div></div></div>
     </div>
 
     <div class="sec-h" style="margin-top:3mm;">บรรยากาศคลาสที่ผ่านมา · Past Sessions</div>
@@ -258,11 +258,11 @@
     <div class="cta-wrap">
       <div class="price-card">
         <div class="pv">฿ 2,590 <small>/ ท่าน</small></div>
-        <div class="pnote">Private group 2–5 ท่าน · เนื้อหาปรับตามสายงาน</div>
+        
         <div class="incl">
-          <div>Workshop 8 ชั่วโมงเต็ม</div>
+          <div>Workshop 6 ชั่วโมงเต็ม</div>
           <div>Prompt Cheatsheet (PDF)</div>
-          <div>Skills 3 personas พร้อมใช้</div>
+          <div>Case Bank 4 สายงาน พร้อมใช้</div>
           <div>Workflow Templates</div>
           <div>ROI Tracker + 30-Day Challenge</div>
         </div>
@@ -281,9 +281,9 @@
 </div>
 
 
-<div class="details">
-  <div class="details-inner">
-    <div class="dcover">
+<div class="page page3">
+  <div class="p2">
+<div class="dcover">
       <div class="dcover-kick">Course Outline · รายละเอียดหลักสูตร</div>
       <h2 class="dcover-title">รายละเอียดหลักสูตร 11 Blocks</h2>
       <p class="dcover-sub">ปลดล็อกเวลา 2–3 ชั่วโมง/วัน ด้วย Claude — จาก Zero สู่ Workflow ที่ทำงานแทนคุณได้จริง</p>
@@ -295,49 +295,56 @@
 
     <div class="dpart"><span class="tag">Part 1</span><span class="nm">Foundation — เริ่มจาก 0 สู่ใช้งานได้จริง</span><span class="mn">Block 01–07</span></div>
     <div class="dcard">
-  <div class="dhead"><span class="dn">01</span><span class="dtitle">Claude คืออะไร? — AI Colleague ไม่ใช่แค่ Chatbot</span><span class="dtime">30 นาที</span></div>
+  <div class="dhead"><span class="dn">01</span><span class="dtitle">Claude คืออะไร? — AI Colleague ไม่ใช่แค่ Chatbot</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>เข้าใจความต่างระหว่าง “Chatbot ที่ตอบคำถาม” กับ “AI Colleague ที่ทำงานให้” และทำไม mindset นี้เปลี่ยนวิธีทำงานทั้งหมด</li><li>รู้ว่า Claude ทำอะไรได้จริงในบริบทงานออฟฟิศ: เขียน · วิเคราะห์ · วางแผน · ผลิตเอกสาร</li><li>มองเห็นว่างานในแต่ละวันของตัวเองส่วนไหนที่มอบให้ Claude ทำแทนได้ทันที</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>ดูตัวอย่างงานจริงที่ Claude ทำได้ เทียบกับวิธีเดิมที่ใช้เวลามากกว่า</li></ul></div>
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">เปลี่ยนมุมมองจาก “ถาม AI” เป็น “สั่ง AI ให้ทำงานแทน” — รากฐานของทั้งหลักสูตร</span></div>
 </div><div class="dcard">
-  <div class="dhead"><span class="dn">02</span><span class="dtitle">First Time Setup — ตั้งค่าให้พร้อมใช้จริง</span><span class="dtime">40 นาที</span></div>
+  <div class="dhead"><span class="dn">02</span><span class="dtitle">First Time Setup — ตั้งค่าให้พร้อมใช้จริง</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>ติดตั้ง Claude Desktop บนเครื่องตัวเอง และรู้จักส่วนประกอบสำคัญของหน้าจอ</li><li>เปิด Capabilities และเข้าใจว่าแต่ละอันเปิดใช้ตอนไหน</li><li>ตั้ง Global Instructions ให้ Claude รู้จักคุณ บทบาท และสไตล์งานที่ต้องการ</li><li>รู้จัก Skills — ชุดความสามารถเฉพาะทางที่เรียกใช้ซ้ำได้</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>ตั้งค่าเครื่องตัวเองจนใช้งานได้จริง จบภายในคลาส — ไม่ต้องกลับไปทำเองที่บ้าน</li></ul></div>
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">เครื่องพร้อมใช้งานเต็มรูปแบบ: Desktop + Instructions + Skills ตั้งค่าเสร็จในคลาส</span></div>
 </div><div class="dcard">
-  <div class="dhead"><span class="dn">03</span><span class="dtitle">Prompt 101 — สูตร CTFC เขียน Prompt ให้ได้งานทุกครั้ง</span><span class="dtime">45 นาที</span></div>
+  <div class="dhead"><span class="dn">03</span><span class="dtitle">Prompt 101 — สูตร CTFC เขียน Prompt ให้ได้งานทุกครั้ง</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>เข้าใจว่าทำไม prompt เดิม ๆ ถึงได้ผลลัพธ์กว้าง ๆ ไม่ตรงใจ</li><li>เรียนสูตร CTFC — โครงเขียน prompt 4 องค์ประกอบที่ทำให้ได้ผลลัพธ์แม่นยำและใช้ซ้ำได้</li><li>ฝึกแปลงคำสั่งลอย ๆ ให้เป็น prompt ที่ให้งานคุณภาพตั้งแต่ครั้งแรก</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>เขียน prompt จริงจากงานของตัวเอง แล้วเทียบผลลัพธ์ก่อน–หลังใช้สูตร CTFC</li></ul></div>
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">สูตร CTFC ที่หยิบไปเขียน prompt ได้ทุกงาน พร้อม Cheatsheet กลับบ้าน</span></div>
 </div><div class="dcard">
-  <div class="dhead"><span class="dn">04</span><span class="dtitle">Use Case Workshop — 4 ประเภทงานหลัก</span><span class="dtime">45 นาที</span></div>
+  <div class="dhead"><span class="dn">04</span><span class="dtitle">Use Case Workshop — 4 ประเภทงานหลัก</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>รู้จัก 4 กลุ่มงานที่ Claude ช่วยได้ดีที่สุด: Writing · Analysis · Planning · Document Production</li><li>เห็นแนวทางและ prompt ตัวอย่างของแต่ละประเภทงาน</li><li>รู้ว่างานของตัวเองอยู่กลุ่มไหน และเริ่มใช้ Claude กับงานนั้นอย่างไร</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>ลงมือทำงานจริงอย่างน้อย 1 ชิ้นจากงานของตัวเอง ในกลุ่มที่เลือก</li></ul></div>
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">ได้ผลงานจริง 1 ชิ้น + แนวทางใช้ Claude ครอบคลุมงานหลักในแต่ละวัน</span></div>
-</div><div class="dcard">
-  <div class="dhead"><span class="dn">05</span><span class="dtitle">Claude in Excel & PowerPoint — สั่งงานข้าม App</span><span class="dtime">35 นาที</span></div>
+</div>
+  </div>
+  <div class="foot"><b>CLAUDE FOR WORK</b> &nbsp;·&nbsp; Professional AI Workshop by Lumis Advisory &nbsp;·&nbsp; จาก Zero สู่ Workflow ใช้จริง</div>
+</div>
+
+<div class="page page4">
+  <div class="p2">
+<div class="dcard">
+  <div class="dhead"><span class="dn">05</span><span class="dtitle">Claude in Excel & PowerPoint — สั่งงานข้าม App</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>ใช้ Add-in ของ Claude ที่ฝังอยู่ใน Excel และ PowerPoint โดยตรง</li><li>สั่งงานในเครื่องมือที่ใช้อยู่ทุกวัน โดยไม่ต้องสลับหน้าจอไปมา</li><li>สร้างและปรับตาราง สูตร และสไลด์ ให้ได้ผลลัพธ์ที่ต้องการจากคำสั่งภาษาคน</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>ทดลองสั่งงานใน Excel/PowerPoint จากไฟล์ตัวอย่าง จนได้ผลลัพธ์ตามต้องการ</li></ul></div>
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">ทำงานใน tool ที่คุ้นเคยได้เร็วขึ้น สั่งงานข้าม app ได้โดยไม่เสีย context</span></div>
 </div><div class="dcard">
-  <div class="dhead"><span class="dn">06</span><span class="dtitle">Iterate & Trust — 3 Moves ปรับผลลัพธ์ให้ตรงใจ</span><span class="dtime">45 นาที</span></div>
+  <div class="dhead"><span class="dn">06</span><span class="dtitle">Iterate & Trust — 3 Moves ปรับผลลัพธ์ให้ตรงใจ</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>เข้าใจว่าผลลัพธ์ครั้งแรกไม่จำเป็นต้องสมบูรณ์ — การ iterate คือทักษะหลัก</li><li>เรียน 3 Moves สำหรับดันผลลัพธ์จาก “พอใช้” ให้เป็น “ใช้ได้จริง”</li><li>สร้างความมั่นใจในการตรวจสอบและไว้ใจงานของ Claude อย่างมีวิจารณญาณ</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>ฝึกปรับผลลัพธ์ของตัวเองด้วย 3 Moves จนได้คุณภาพที่ส่งงานได้</li></ul></div>
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">เทคนิค 3 Moves ที่ทำให้ได้งานตรงใจ โดยไม่ต้องเริ่มเขียนใหม่ทุกครั้ง</span></div>
 </div><div class="dcard">
-  <div class="dhead"><span class="dn">07</span><span class="dtitle">Recap + Q&A — ทบทวนและปูทางสู่ Cowork</span><span class="dtime">15 นาที</span></div>
+  <div class="dhead"><span class="dn">07</span><span class="dtitle">Recap + Q&A — ทบทวนและปูทางสู่ Cowork</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>สรุปสิ่งที่ได้จาก Part 1 ให้เชื่อมเป็นภาพเดียว</li><li>เคลียร์ข้อสงสัยก่อนก้าวสู่การสร้างระบบอัตโนมัติใน Part 2</li><li>เห็นภาพว่าทักษะพื้นฐานที่เพิ่งเรียน จะต่อยอดเป็น Workflow ได้อย่างไร</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>ถาม-ตอบสด และตรวจ checklist ความพร้อมก่อนเข้า Part 2</li></ul></div>
@@ -347,28 +354,35 @@
 
     <div class="dpart"><span class="tag">Part 2</span><span class="nm">Cowork — สร้างระบบที่ทำงานแทนคุณ</span><span class="mn">Block 08–11</span></div>
     <div class="dcard">
-  <div class="dhead"><span class="dn">08</span><span class="dtitle">Cowork Deep Dive — เลือก Chat หรือ Cowork ให้ถูก</span><span class="dtime">65 นาที</span></div>
+  <div class="dhead"><span class="dn">08</span><span class="dtitle">Cowork Deep Dive — เลือก Chat หรือ Cowork ให้ถูก</span></div>
   <div class="dcols">
-    <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>เข้าใจความต่างระหว่าง Chat mode (สนทนา) กับ Cowork mode (ทำงานกับไฟล์และระบบจริง)</li><li>รู้ 9 สิ่งที่ Cowork ทำได้ ซึ่ง Chat ธรรมดาทำไม่ได้ เช่น จัดการไฟล์ รันงานหลายขั้นตอน เชื่อมต่อเครื่องมือ</li><li>ตัดสินใจได้ว่างานแบบไหนควรใช้ Chat และงานแบบไหนต้องใช้ Cowork</li></ul></div>
+    <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>เข้าใจความต่างระหว่าง Chat mode (สนทนา) กับ Cowork mode (ทำงานกับไฟล์และระบบจริง)</li><li>รู้ 9 สิ่งที่ Cowork ทำได้ แต่ Chat ทำไม่ได้ เช่น จัดการไฟล์ รันงานหลายขั้นตอน เชื่อมต่อเครื่องมือ</li><li>ตัดสินใจได้ว่างานแบบไหนควรใช้ Chat และงานแบบไหนต้องใช้ Cowork</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>ทดลองใช้ Cowork กับงานจัดการไฟล์/เอกสารจริง เห็นพลังของ mode นี้กับตา</li></ul></div>
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">เลือก mode ได้ถูกทุกครั้ง — ไม่เสียเวลากับเครื่องมือที่ไม่เหมาะกับงาน</span></div>
 </div><div class="dcard">
-  <div class="dhead"><span class="dn">09</span><span class="dtitle">RAPID Framework — เลือกว่างานไหนควร Automate</span><span class="dtime">30 นาที</span></div>
+  <div class="dhead"><span class="dn">09</span><span class="dtitle">RAPID Framework — เลือกว่างานไหนควร Automate</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>รู้จัก RAPID Framework — เกณฑ์คัดกรองว่างานไหนคุ้มค่าที่จะทำเป็นระบบอัตโนมัติ</li><li>ประเมินงานของตัวเองด้วยเกณฑ์ที่จับต้องได้ ไม่ใช่ความรู้สึก</li><li>จัดลำดับความสำคัญ เลือกงานที่ให้ผลตอบแทนสูงสุดมาทำก่อน</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>ให้คะแนนงานของตัวเองด้วย RAPID แล้วเลือก 1 งานไปสร้างเป็น Workflow ใน Block ถัดไป</li></ul></div>
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">เกณฑ์ RAPID ที่ใช้เลือกงาน automate ได้เอง ไม่หลงลงทุนผิดจุด</span></div>
-</div><div class="dcard">
-  <div class="dhead"><span class="dn">10</span><span class="dtitle">Build Your First Workflow — สร้าง Workflow ตัวแรก</span><span class="dtime">90 นาที</span></div>
+</div>
+  </div>
+  <div class="foot"><b>CLAUDE FOR WORK</b> &nbsp;·&nbsp; Professional AI Workshop by Lumis Advisory &nbsp;·&nbsp; จาก Zero สู่ Workflow ใช้จริง</div>
+</div>
+
+<div class="page page5">
+  <div class="p2">
+<div class="dcard">
+  <div class="dhead"><span class="dn">10</span><span class="dtitle">Build Your First Workflow — สร้าง Workflow ตัวแรก</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>สร้าง Project ให้ทำหน้าที่เป็น sub-agent (ผู้ช่วยเฉพาะทาง) ที่ทำงานซ้ำ ๆ แทนคุณ</li><li>วางขั้นตอน Workflow ทีละ step จนระบบทำงานได้ครบวงจร</li><li>ทดสอบ ปรับแก้ และทำให้ Workflow เชื่อถือได้พอที่จะใช้กับงานจริง</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>ลงมือสร้าง Workflow ตัวแรกจากงานจริงของตัวเอง (Block ที่ยาวและลงมือมากที่สุดของทั้งวัน)</li><li>ทดสอบรันจริงและปรับจูนกับผู้สอนแบบตัวต่อตัว</li></ul></div>
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">Workflow อัตโนมัติ 1 ตัว พร้อมใช้จริง กลับไปทำงานแทนคุณได้ตั้งแต่วันรุ่งขึ้น</span></div>
 </div><div class="dcard">
-  <div class="dhead"><span class="dn">11</span><span class="dtitle">Showcase + Daily Habit — ทำให้ใช้ได้ต่อเนื่อง</span><span class="dtime">25 นาที</span></div>
+  <div class="dhead"><span class="dn">11</span><span class="dtitle">Showcase + Daily Habit — ทำให้ใช้ได้ต่อเนื่อง</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>นำเสนอ Workflow ของตัวเอง และเรียนรู้จากของเพื่อนร่วมคลาส</li><li>รู้จัก 10-Minute Daily Habit — วิธีทำให้การใช้ AI กลายเป็นนิสัยประจำวัน</li><li>ใช้ ROI Tracker วัดเวลาที่ประหยัดได้จริง และรับ 30-Day Challenge ไปทำต่อ</li></ul></div>
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>Demo Workflow ของตัวเอง + วางแผน Daily Habit และเป้าหมาย 30 วันข้างหน้า</li></ul></div>
@@ -377,18 +391,19 @@
 </div>
 
     <h3 class="dh1">สรุปสิ่งที่ผู้เรียนจะได้รับ</h3>
-    <div class="dsum"><div class="ditem">Workshop เต็มรูปแบบ 8 ชั่วโมง แบบ Hands-on ลงมือทำกับงานจริงของตัวเอง</div><div class="ditem">เครื่องพร้อมใช้: Claude Desktop + Global Instructions + Skills ตั้งค่าเสร็จในคลาส</div><div class="ditem">Prompt Cheatsheet (PDF) — สูตร CTFC และ prompt ตัวอย่างพร้อมหยิบใช้</div><div class="ditem">Skills 3 Personas พร้อมใช้ — ชุดผู้ช่วยเฉพาะทางที่ปรับตามสายงาน</div><div class="ditem">Workflow Templates — โครง Workflow สำเร็จรูปสำหรับต่อยอด</div><div class="ditem">Workflow อัตโนมัติ 1 ตัวที่สร้างเองในคลาส พร้อมใช้จริง</div></div>
+    <div class="dsum"><div class="ditem">Workshop เต็มรูปแบบ 6 ชั่วโมง แบบ Hands-on ลงมือทำกับงานจริง</div><div class="ditem">Set up เครื่องพร้อมใช้งาน: Claude Desktop + Global Instructions + Skills</div><div class="ditem">Prompt Cheatsheet (PDF) — สูตร CTFC และ prompt ตัวอย่าง</div><div class="ditem">Case ตามสายงาน — 4 สาย: Finance &amp; Accounting · Admin · Sales &amp; Marketing · HR พร้อม dataset และ prompt</div><div class="ditem">Workflow Templates — โครง Workflow สำเร็จรูปสำหรับต่อยอด</div><div class="ditem">Workflow อัตโนมัติ 1 ตัวที่สร้างเองในคลาส พร้อมใช้จริง</div></div>
 
     <h3 class="dh1">รูปแบบและรายละเอียดคลาส</h3>
-    <table class="dtable"><tr><td class='k'>รูปแบบ</td><td class='v'>Intensive 1 วัน · 8 ชั่วโมง · Hands-on ลงมือทำตลอด</td></tr><tr><td class='k'>โครงสร้าง</td><td class='v'>11 Blocks · 2 Parts (Foundation → Cowork)</td></tr><tr><td class='k'>ขนาดกลุ่ม</td><td class='v'>Private Group 2–5 ท่าน · เนื้อหาปรับตามสายงาน</td></tr><tr><td class='k'>ผู้เรียนที่เหมาะสม</td><td class='v'>พนักงานออฟฟิศ · ผู้บริหารทุกสายงาน · เจ้าของกิจการ/SME · ผู้เริ่มต้น (ไม่ต้องมีพื้นฐาน)</td></tr><tr><td class='k'>ค่าเรียน</td><td class='v'>฿2,590 / ท่าน</td></tr></table>
+    <table class="dtable"><tr><td class='k'>รูปแบบ</td><td class='v'>Intensive 1 วัน · 6 ชั่วโมง · Hands-on ลงมือทำตลอด</td></tr><tr><td class='k'>โครงสร้าง</td><td class='v'>11 Blocks · 2 Parts (Foundation → Cowork)</td></tr><tr><td class='k'>ขนาดกลุ่ม</td><td class='v'>Private Group 2–5 ท่าน · เนื้อหาปรับตามสายงาน</td></tr><tr><td class='k'>ผู้เรียนที่เหมาะสม</td><td class='v'>พนักงานออฟฟิศ · ผู้บริหารทุกสายงาน · เจ้าของกิจการ/SME · ผู้เริ่มต้น (ไม่ต้องมีพื้นฐาน)</td></tr><tr><td class='k'>ค่าเรียน</td><td class='v'>฿2,590 / ท่าน</td></tr></table>
 
     <div class="dcontact">
       <div class="dq">“AI ไม่ได้มาแทนคน — แต่คนที่ใช้ AI จะแทนคนที่ไม่ใช้”</div>
       <div class="dch">สมัครเรียน / ขอรายละเอียดเพิ่มเติม</div>
       <div class="dclines"><span>✉ krit.lumis@gmail.com</span><span>☎ 081-975-5996</span><span>f Claude For Work by Lumis Advisory</span></div>
     </div>
+  
   </div>
+  <div class="foot"><b>CLAUDE FOR WORK</b> &nbsp;·&nbsp; Professional AI Workshop by Lumis Advisory &nbsp;·&nbsp; จาก Zero สู่ Workflow ใช้จริง</div>
 </div>
-
 </body>
 </html>
