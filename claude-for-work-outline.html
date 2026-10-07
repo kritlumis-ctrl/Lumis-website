@@ -160,18 +160,21 @@
   .clogos .cchip img{max-width:100%;max-height:100%;width:auto;object-fit:contain;}
 
   /* pricing */
-  .prices{display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-bottom:8px;}
-  .pcard{border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:9px;padding:8px 11px;background:#fdfbf6;break-inside:avoid;display:flex;flex-direction:column;}
+  .prices{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:10px;}
+  .pcard.wide{grid-column:1 / -1;flex-direction:row;align-items:center;gap:24px;}
+  .pcard.wide .pw-left{flex:0 0 36%;}
+  .pcard.wide ul{margin-top:0;flex:1;display:grid;grid-template-columns:1fr 1fr;gap:2px 18px;}
+  .pcard{border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:9px;padding:11px 14px;background:#fdfbf6;break-inside:avoid;display:flex;flex-direction:column;}
   .pcard .pk{font-size:8.5px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);font-weight:700;}
-  .pcard .pnm{font-size:12.5px;font-weight:700;color:var(--charcoal);margin:3px 0 5px;line-height:1.25;}
+  .pcard .pnm{font-size:13.5px;font-weight:700;color:var(--charcoal);margin:4px 0 6px;line-height:1.25;}
   .pcard .psz{display:inline-block;font-size:9px;color:var(--grey);border:1px solid var(--line);border-radius:20px;padding:2px 9px;background:#fff;}
   .pcard .pv{font-family:Georgia,'Times New Roman','Sukhumvit Set','Noto Sans Thai',serif;font-size:24px;font-weight:700;color:var(--charcoal);line-height:1;margin:6px 0 2px;}
   .pcard .pv small{font-family:'Sukhumvit Set','Noto Sans Thai',sans-serif;font-size:9.5px;font-weight:400;color:var(--grey);margin-left:4px;}
   .pcard .pv.ask{font-size:19px;color:var(--gold);}
   .pcard .pwas{font-size:9px;color:var(--grey);}
   .pcard .pwas .sv{color:#a8842f;border:1px solid var(--line);border-radius:10px;padding:1px 7px;margin-left:5px;white-space:nowrap;}
-  .pcard ul{list-style:none;margin-top:6px;}
-  .pcard li{font-size:9.5px;color:var(--ink);line-height:1.3;padding:1px 0 1px 11px;position:relative;}
+  .pcard ul{list-style:none;margin-top:7px;}
+  .pcard li{font-size:10.2px;color:var(--ink);line-height:1.4;padding:2px 0 2px 11px;position:relative;}
   .pcard li::before{content:"•";position:absolute;left:1px;color:var(--gold);font-weight:800;}
   .pnote{font-size:9.2px;color:var(--grey);margin-bottom:6px;}
   .pnote b{color:var(--charcoal);}
@@ -261,10 +264,6 @@
       <div class="dcover-kick">Course Outline · รายละเอียดหลักสูตร</div>
       <h2 class="dcover-title">รายละเอียดหลักสูตร 11 Blocks</h2>
       <p class="dcover-sub">ปลดล็อกเวลา 2–3 ชั่วโมง/วัน ด้วย Claude — จาก Zero สู่ Workflow ที่ทำงานแทนคุณได้จริง</p>
-      <div class="dintro">
-        <h6>หลักสูตรนี้ต่างจากคอร์ส AI ทั่วไปอย่างไร</h6>
-        <p>คอร์สส่วนใหญ่สอนให้ “ถาม-ตอบ” กับ AI แต่ <b>88% ของคนใช้ AI แค่ค้นข้อมูล</b> มีเพียง 5% ที่ใช้เปลี่ยนวิธีทำงานจริง (EY 2025) หลักสูตรนี้พาคุณข้ามเส้นจาก “ผู้ใช้” ไปเป็น “ผู้สั่งงาน” — เรียนแบบลงมือทำกับงานจริงของตัวเอง ทุก Block มีผลลัพธ์ที่จับต้องได้กลับไปใช้ทันที และจบวันด้วย Workflow อัตโนมัติตัวแรกที่ทำงานแทนคุณได้จริง</p>
-      </div>
     </div>
 
     <div class="dpart"><span class="tag">Part 1</span><span class="nm">Foundation — เริ่มจาก 0 สู่ใช้งานได้จริง</span><span class="mn">Block 01–07</span></div>
@@ -297,12 +296,6 @@
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">ได้ผลงานจริง 1 ชิ้น + แนวทางใช้ Claude ครอบคลุมงานหลักในแต่ละวัน</span></div>
 </div>
-  </div>
-  <div class="foot"><b>CLAUDE FOR WORK</b> &nbsp;·&nbsp; Professional AI Workshop by Lumis Advisory &nbsp;·&nbsp; จาก Zero สู่ Workflow ใช้จริง</div>
-</div>
-
-<div class="page page4">
-  <div class="p2">
 <div class="dcard">
   <div class="dhead"><span class="dn">05</span><span class="dtitle">Claude in Excel & PowerPoint — สั่งงานข้าม App</span></div>
   <div class="dcols">
@@ -310,7 +303,14 @@
     <div class="dcol"><h6>กิจกรรมในคลาส</h6><ul><li>ทดลองสั่งงานใน Excel/PowerPoint จากไฟล์ตัวอย่าง จนได้ผลลัพธ์ตามต้องการ</li></ul></div>
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">ทำงานใน tool ที่คุ้นเคยได้เร็วขึ้น สั่งงานข้าม app ได้โดยไม่เสีย context</span></div>
-</div><div class="dcard">
+</div>
+  </div>
+  <div class="foot"><b>CLAUDE FOR WORK</b> &nbsp;·&nbsp; Professional AI Workshop by Lumis Advisory &nbsp;·&nbsp; จาก Zero สู่ Workflow ใช้จริง</div>
+</div>
+
+<div class="page page4">
+  <div class="p2">
+<div class="dcard">
   <div class="dhead"><span class="dn">06</span><span class="dtitle">Iterate & Trust — 3 Moves ปรับผลลัพธ์ให้ตรงใจ</span></div>
   <div class="dcols">
     <div class="dcol"><h6>จะได้เรียนรู้อะไร</h6><ul><li>เข้าใจว่าผลลัพธ์ครั้งแรกไม่จำเป็นต้องสมบูรณ์ — การ iterate คือทักษะหลัก</li><li>เรียน 3 Moves สำหรับดันผลลัพธ์จาก “พอใช้” ให้เป็น “ใช้ได้จริง”</li><li>สร้างความมั่นใจในการตรวจสอบและไว้ใจงานของ Claude อย่างมีวิจารณญาณ</li></ul></div>
@@ -350,12 +350,6 @@
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">Workflow อัตโนมัติ 1 ตัว พร้อมใช้จริง กลับไปทำงานแทนคุณได้ตั้งแต่วันรุ่งขึ้น</span></div>
 </div>
-  </div>
-  <div class="foot"><b>CLAUDE FOR WORK</b> &nbsp;·&nbsp; Professional AI Workshop by Lumis Advisory &nbsp;·&nbsp; จาก Zero สู่ Workflow ใช้จริง</div>
-</div>
-
-<div class="page page5">
-  <div class="p2">
 <div class="dcard">
   <div class="dhead"><span class="dn">11</span><span class="dtitle">Showcase + Daily Habit — ทำให้ใช้ได้ต่อเนื่อง</span></div>
   <div class="dcols">
@@ -364,7 +358,12 @@
   </div>
   <div class="dtake"><b>ได้กลับไปใช้ทันที ›</b><span class="txt">แผนใช้งานต่อเนื่อง + ROI Tracker + 30-Day Challenge ที่ทำให้ทักษะไม่หายไปหลังคลาส</span></div>
 </div>
+  </div>
+  <div class="foot"><b>CLAUDE FOR WORK</b> &nbsp;·&nbsp; Professional AI Workshop by Lumis Advisory &nbsp;·&nbsp; จาก Zero สู่ Workflow ใช้จริง</div>
+</div>
 
+<div class="page page5">
+  <div class="p2">
     <h3 class="dh1">สรุปสิ่งที่ผู้เรียนจะได้รับ</h3>
     <div class="dsum"><div class="ditem">Workshop เต็มรูปแบบ 6 ชั่วโมง แบบ Hands-on ลงมือทำกับงานจริง</div><div class="ditem">Set up เครื่องพร้อมใช้งาน: Claude Desktop + Global Instructions + Skills</div><div class="ditem">Prompt Cheatsheet (PDF) — สูตร CTFC และ prompt ตัวอย่าง</div><div class="ditem">Case ตามสายงาน — 4 สาย: Finance &amp; Accounting · Admin · Sales &amp; Marketing · HR พร้อม dataset และ prompt</div><div class="ditem">Workflow Templates — โครง Workflow สำเร็จรูปสำหรับต่อยอด</div><div class="ditem">Workflow อัตโนมัติ 1 ตัวที่สร้างเองในคลาส พร้อมใช้จริง</div></div>
 
@@ -372,7 +371,6 @@
     <table class="dtable"><tr><td class='k'>รูปแบบ</td><td class='v'>Intensive 1 วัน · 6 ชั่วโมง · Hands-on ลงมือทำตลอด · เลือกเรียน Onsite หรือ Online</td></tr><tr><td class='k'>โครงสร้าง</td><td class='v'>11 Blocks · 2 Parts (Foundation → Cowork)</td></tr><tr><td class='k'>ขนาดกลุ่ม / วันเรียน</td><td class='v'>Private Class 3 ท่านขึ้นไป · In-house Training 20–25 ท่าน (เหมาต่อวัน) — เลือกวันเองได้ จองผ่าน DM เพจ Claude For Work</td></tr><tr><td class='k'>หลักสูตรที่เปิดสอน</td><td class='v'>Professional (ผู้เรียนคละสายงาน) และ Finance &amp; Accounting (สาย F&amp;A ล้วน) — โครง 11 Blocks เดียวกัน ต่างที่เคสฝึกและ Workflow</td></tr><tr><td class='k'>ผู้เรียนที่เหมาะสม</td><td class='v'>พนักงานออฟฟิศ · ผู้บริหารทุกสายงาน · เจ้าของกิจการ/SME · ผู้เริ่มต้น (ไม่ต้องมีพื้นฐาน)</td></tr></table>
 
     <h3 class="dh1">ค่าเรียน — Price Sheet 2569</h3>
-    <div class="pnote">เอกสารชุดนี้เป็น Outline ของหลักสูตร <b>Professional</b> — หลักสูตร <b>Finance &amp; Accounting</b> ใช้โครง 11 Blocks เดียวกัน แต่เปลี่ยนเคสฝึก (Block 04) และ Workflow (Block 10) เป็นงานการเงิน-บัญชีทั้งหมด</div>
     <div class="prices">
       <div class="pcard">
         <div class="pk">Private Class</div>
@@ -396,12 +394,14 @@
           <li>Use Case จากงานจริง — Variance · Reconciliation · AR Aging</li>
         </ul>
       </div>
-      <div class="pcard">
-        <div class="pk">In-house Training</div>
-        <div class="pnm">ไปสอนถึงบริษัทของคุณ</div>
-        <span class="psz">20 – 25 ท่าน · เหมาต่อวัน</span>
-        <div class="pv ask">สอบถามราคา</div>
-        <div class="pwas">ราคาตามจำนวนผู้เรียนและขอบเขตงาน</div>
+      <div class="pcard wide">
+        <div class="pw-left">
+          <div class="pk">In-house Training</div>
+          <div class="pnm">ไปสอนถึงบริษัทของคุณ</div>
+          <span class="psz">20 – 25 ท่าน · เหมาต่อวัน</span>
+          <div class="pv ask">สอบถามราคา</div>
+          <div class="pwas">ราคาตามจำนวนผู้เรียนและขอบเขตงาน</div>
+        </div>
         <ul>
           <li>Needs Assessment ก่อนเรียน — สำรวจงานจริงของทีม แล้วออกแบบเคสให้ตรง</li>
           <li>ประยุกต์กับงานจริงของบริษัท และสร้าง Project ใน Cowork</li>
